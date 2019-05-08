@@ -1,0 +1,193 @@
+.bubbleDiv{
+    width: 1000px;
+    margin: 0 auto;
+    height: 1000px;
+    border: 1px solid #4a4f58;
+}
+.bubbleItem{
+    width: 100%;
+}
+.bubble{
+    max-width: 300px;
+    position: relative;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 7px;
+    margin-top: 15px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.leftBubble{
+    position: relative;
+    margin-left: 25px;
+    background-color: #00b6b6;
+    border: 1px solid #00b6b6;
+    -moz-box-shadow:1px 1px 2px hsla(0, 0%, 0%, 0.3);
+    -webkit-box-shadow:1px 1px 2px hsla(0, 0%, 0%, 0.3);
+    box-shadow:1px 1px 2px hsla(0, 0%, 0%, 0.3);
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+
+.leftBubble .bottomLevel{
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    border-top: 10px solid #00b6b6;
+    border-left: 10px solid transparent;
+}
+.leftBubble .topLevel{
+    position: absolute;
+    top: 11px;
+    left: -8px;
+    border-top: 10px solid #00b6b6;
+    border-left: 10px solid transparent;
+    z-index: 100;
+}
+.rightBubble{
+    position: relative;
+    margin-right: 25px;
+    float: right;
+    background-color: #66afe9;
+    border: 1px solid #66afe9;
+    -moz-box-shadow:1px 1px 2px hsla(0, 0%, 0%, 0.3);
+    -webkit-box-shadow:1px 1px 2px hsla(0, 0%, 0%, 0.3);
+    box-shadow:1px 1px 2px hsla(0, 0%, 0%, 0.3);
+    word-wrap: break-word;
+    word-break: normal;
+}
+.rightBubble .bottomLevel{
+    position: absolute;
+    bottom: 11px;
+    right: -10px;
+    border-top: 10px solid #66afe9;
+    border-rigth: 10px solid transparent ;
+}
+.rightBubble .topLevel{
+    position: absolute;
+    bottom: 12px;
+    right: -8px;
+    border-top: 10px solid #66afe9;
+    border-right: 10px solid transparent;
+    z-index: 100;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.center{
+    border-radius:42px;
+    border:1px solid #dcdcdc;
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+    max-height:100px;
+    background:#ddd;
+    max-width:300px;
+    text-align: center;
+    vertical-align:middle;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ededed), color-stop(100%, #dfdfdf) );
+    background:-ms-linear-gradient( top, #ededed 5%, #dfdfdf 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    text-shadow:1px 1px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    background-color:#ededed;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+.login-button { /* 按钮美化 */
+    width: 30px; /* 宽度 */
+    height: 30px; /* 高度 */
+    border-width: 0px; /* 边框宽度 */
+    border-radius: 3px; /* 边框半径 */ /* 背景颜色 */
+    background-image:url("../images/emoji.png");
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+    outline: none; /* 不显示轮廓线 */
+    font-family: Microsoft YaHei; /* 设置字体 */
+    background-position: center 0;
+    background-size: 100% 100%;
+}
+.login-button:hover {
+    border:1px solid blue;
+}
+
+.image-button { /* 按钮美化 */
+    width: 30px; /* 宽度 */
+    height: 30px; /* 高度 */
+    border-width: 0px; /* 边框宽度 */
+    border-radius: 3px; /* 边框半径 */ /* 背景颜色 */
+    background-image:url("../images/pictures.png");
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+    outline: none; /* 不显示轮廓线 */
+    font-family: Microsoft YaHei; /* 设置字体 */
+    background-position: center 0;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+.image-button:hover {
+    border:1px solid blue;
+}
+
+.buttonf { /* 按钮美化 */
+    margin-top: 10px;
+    position:relative;
+    width: 40px; /* 宽度 */
+    height: 40px; /* 高度 */
+    border-width: 0px; /* 边框宽度 */
+    border-radius: 3px; /* 边框半径 */ /* 背景颜色 */
+    background-image:url("../images/user.png");
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+    outline: none; /* 不显示轮廓线 */
+    font-family: Microsoft YaHei; /* 设置字体 */
+    background-position: center 0;
+    background-size: cover;
+    background-size: 100% 100%;
+    box-shadow:1px 1px 2px hsla(0, 0%, 0%, 0.3);
+}
+.image-button:hover {
+    border:1px solid blue;
+}
+
+.clear-button { /* 按钮美化 */
+    width: 30px; /* 宽度 */
+    height: 30px; /* 高度 */
+    border-width: 0px; /* 边框宽度 */
+    border-radius: 3px; /* 边框半径 */
+    background-image:url("../images/clear.png");
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+    outline: none; /* 不显示轮廓线 */
+    font-family: Microsoft YaHei; /* 设置字体 */
+    background-position: center 0;
+    background-size: 100% 100%;
+}
+.clear-button:hover {
+    border:1px solid blue;
+}
+
+.send-button { /* 按钮美化 */
+    width: 30px; /* 宽度 */
+    height: 30px; /* 高度 */
+    border-width: 0px; /* 边框宽度 */
+    border-radius: 3px; /* 边框半径 */
+    background: white; /* 背景颜色 */
+    background-image:url("../images/send.png");
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+    outline: none; /* 不显示轮廓线 */
+    font-family: Microsoft YaHei; /* 设置字体 */
+    background-position: center 0;
+    background-size: 100% 100%;
+}
+.send-button:hover {
+    border:1px solid blue;
+}

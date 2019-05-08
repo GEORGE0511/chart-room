@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Wayou">
+    <meta name="description" content="hichat | a simple chat application built with node.js and websocket">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hichat</title>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/qipao.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/inputEffect.css" />
+    <link rel="stylesheet" href="/stylesheets/tooltips.css" />
+    <link rel="stylesheet" href="/stylesheets/spop.min.css" />
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/snow.js"></script>
+    <script src="/javascripts/jquery.pure.tooltips.js"></script>
+    <script src="/javascripts/spop.min.js"></script>
+    <style type="text/css">
+        html{width: 100%; height: 100%;}
+
+        body{
+
+            background-repeat: no-repeat;
+
+            background-position: center center #2D0F0F;
+
+            background-color: #00BDDC;
+
+            background-image: url(/images/snow.jpg);
+
+            background-size: 100% 100%;
+
+        }
+
+        .snow-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 100001; }
+
+    </style>
+</head>
+<body>
+
+<div class="snow-container"></div>
+<div class="wrapper">
+    <div class="banner">
+        <img src="/images/chat.png" style = "width:50px;height: 50px;margin-top: 10px;margin-left: 10px">
+        <span id="status" style ="margin-left:560px"></span>
+    </div>
+    <div id="historyMsg">
+    </div>
+    <div class="controls" >
+        <div class="items">
+            <input id="colorStyle" type="color" placeHolder='#000' title="font color" />
+            <input id="emoji" type="button"  class = "login-button" title="emoji" />
+            <label for="sendImage" class="imageLable">
+                <input type="button" class = "image-button" />
+                <input id="sendImage" type="file" value="image" class = "sendImage"/>
+            </label>
+            <input id="clearBtn" name = "clearBtn" type="button" class = "clear-button" title="clear screen" />
+        </div>
+        <textarea id="messageInput" placeHolder="点击右下角发送"></textarea>
+        <div style="position:absolute;left:725px;top:93px">
+            <input id="sendBtn" type="button" class = "send-button">
+        </div>
+        <div id="emojiWrapper">
+        </div>
+    </div>
+</div>
+<div id="loginWrapper">
+    <p id="info">connecting to server...</p>
+    <div id="nickWrapper">
+        <input type="text" placeHolder="nickname" id="nicknameInput" />
+        <input type="button" value="OK" id="loginBtn" />
+    </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/javascripts/hichat.js"></script>
+</body>
+</html>

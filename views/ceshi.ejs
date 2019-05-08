@@ -1,0 +1,169 @@
+<html>
+
+<head>
+
+    <style>
+
+        /* bubble style */
+
+        .sender{
+
+            clear:both;
+        }
+
+
+        .sender p:nth-of-type(1){
+
+            float: left;
+
+        }
+
+        .sender p:nth-of-type(2){
+
+            background-color: aquamarine;
+
+            float: left;
+
+            margin: 0 20px 10px 15px;
+
+            padding: 10px 10px 10px 0px;
+
+            border-radius:7px;
+
+        }
+
+
+
+        .receiver p:first-child img,
+
+        .sender p:first-child img{
+
+            width:50px;
+
+            height: 50px;
+
+        }
+
+
+
+        .receiver{
+
+            clear:both;
+
+        }
+
+        .receiver p:nth-child(1){
+
+            float: right;
+
+        }
+
+        .receiver p:nth-of-type(2){
+
+            float:right;
+
+            background-color: gold;
+
+            margin: 0 10px 10px 20px;
+
+            padding: 10px 0px 10px 10px;
+
+            border-radius:7px;
+
+        }
+
+
+
+        .left_triangle{
+
+            height:0px;
+
+            width:0px;
+
+            border-width:8px;
+
+            border-style:solid;
+
+            border-color:transparent aquamarine transparent transparent;
+
+            position: relative;
+
+            left:-16px;
+
+            top:3px;
+
+        }
+
+
+
+        .right_triangle{
+
+            height:0px;
+
+            width:0px;
+
+            border-width:8px;
+
+            border-style:solid;
+
+            border-color:transparent transparent transparent gold;
+
+            position: relative;
+
+            right:-16px;
+
+            top:3px;
+
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- Left -->
+
+<p class="sender">
+
+<p>
+
+    <img src="chatTemplateExample2_files/cat.jpg">
+
+</p>
+
+<p>
+
+<p class="left_triangle"></p>
+
+<span> hello, man! </span>
+
+</p>
+
+</p>
+
+<!-- Right -->
+
+<p class="receiver">
+
+<p>
+
+    <img src="chatTemplateExample2_files/cat.jpg">
+
+</p>
+
+<p>
+
+<p class="right_triangle"></p>
+
+<span> hello world </span>
+
+</p>
+
+</p>
+
+</body>
+
+</html>
